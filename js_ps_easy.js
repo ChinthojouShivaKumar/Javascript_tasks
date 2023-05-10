@@ -54,3 +54,73 @@
             console.log("the units of power in"+voltage+"volts and "+ current+ " in amperes has"+ power +"volt-amp")
         }
         power(voltage,current)
+
+//either one of condition is true
+
+function checkBool(a,b) {
+    if(a+b==10 || a==10|| b==10){
+        console.log("true")
+    }
+    else{
+        console.log("false")
+    }
+}   
+checkBool(15)
+
+// string something joined with space
+
+var strName = "something"
+
+function string(a){
+    
+    var a = a.toString()
+
+    var b = a+" "+strName
+    
+    console.log(b)
+}
+string(42)
+
+// finding true or false taking an argment as string
+
+function strNames(a,b) {
+    
+    if(a=="shiva") {
+        if(b="kumar"){
+            console.log("true")
+        }
+        
+    }
+    else{
+        console.log('false')
+    }
+}
+strNames("shiva","kumar")
+
+// reversing string case uppertolower and lowertoupper
+
+var a = "Hello Birthday"
+
+var a1 = a[0].toLowerCase()+(a.slice(1,6).toUpperCase())
+var a2 = a[6].toLowerCase()+(a.slice(7,15).toUpperCase())
+
+console.log(a1+a2)
+
+//checking Datatype with input and using function with argument
+var a = 100;
+var b = "shiva"
+
+function check(a){
+console.log(typeof(a))
+console.log(typeof(b))
+}
+check(a)
+
+//finding greatest number using terinary operator
+
+var a = 4
+var b = 8
+var c = 2
+
+let greatest = (a>b)&&(a>c)?a:(b>c)?b:c;
+console.log(greatest)
