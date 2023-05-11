@@ -146,3 +146,22 @@ alert(str+"are the vowels in "+a+" and the count of number of vowels are " +coun
 
 }
 vowels()
+
+
+// pattern of a number
+
+
+var str=''
+for(let i=1;i<6;i++){
+    str+=i+' '
+    alert(str)
+}
+
+output:- 
+ 
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+
