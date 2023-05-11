@@ -124,3 +124,20 @@ var c = 2
 
 let greatest = (a>b)&&(a>c)?a:(b>c)?b:c;
 console.log(greatest)
+
+// finding vowels and their count
+var a ="celebration"
+
+var count=0
+
+var str =''
+
+for(let i=0;i<a.length;i++){
+       let b = a[i]
+       
+        if(b=="a"||b=="e"||b=="i"||b=="o"||b=="u"){
+             str+=b+' '
+             count++
+    }
+}
+alert(str+"are the vowels in "+a+" and the count of number of vowels are " +count)
