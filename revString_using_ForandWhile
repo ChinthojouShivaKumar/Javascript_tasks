@@ -1,0 +1,44 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+var a = 'shivakumar'
+var i = a.length-1
+
+var str =''
+while(i>-1){
+    let b = a[i]
+    // console.log(b)
+     str+=b+' '
+    i--
+}
+console.log(str)
+
+
+
+var a = "shivakumar";
+var str=''
+for(let i=a.length-1;i>=0;i--){
+    let b = a[i]
+    str+=b+' '
+}
+console.log(str)
+
+
+var a = 'shivakumar'
+var i = a.length-1
+
+var str =''
+do{
+    let b = a[i]
+    str+=b+' '
+    i--
+} while(i>-1)
+console.log(str)
+
+
+output:-
+node /tmp/MAUYwhiCQk.js
+r a m u k a v i h s 
+r a m u k a v i h s 
+r a m u k a v i h s 
