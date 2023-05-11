@@ -126,6 +126,8 @@ let greatest = (a>b)&&(a>c)?a:(b>c)?b:c;
 console.log(greatest)
 
 // finding vowels and their count
+function vowels(){
+
 var a ="celebration"
 
 var count=0
@@ -141,3 +143,6 @@ for(let i=0;i<a.length;i++){
     }
 }
 alert(str+"are the vowels in "+a+" and the count of number of vowels are " +count)
+
+}
+vowels()
