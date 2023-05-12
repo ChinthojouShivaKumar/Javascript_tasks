@@ -165,3 +165,88 @@ output:-
 1 2 3 4 
 1 2 3 4 5 
 
+
+//factorial of number
+
+console.log("Welcome to Programiz!");
+
+var n = 5
+
+var y = n*(n-1)*(n-2)*(n-3)*(n-4)
+
+
+console.log(y)
+
+//reverseCase string
+
+
+
+var a = 'Happy Birthday'
+var str = ''
+for(i=0;i<a.length;i++){
+    let b = a[i]
+    if(b>='a'&&b<='z') {
+        str+=b.toUpperCase()+' '
+       
+    }
+    else if(b>='A'&&b<='Z'){
+        str+=b.toLowerCase()+' '
+        
+    }
+    else{
+        str+=b+' '
+    }
+}
+console.log(str)
+
+// power of number
+
+var num = 5;
+var pow = 3;
+
+var result = num**pow
+
+console.log(result)
+
+//consonants and vowles count in given string
+
+function vowels(){
+
+var a ="i am shivakumar"
+
+var vowel=0
+
+var consonants=0
+
+
+var str =''
+var str1=''
+
+for(let i=0;i<a.length;i++){
+       let b = a[i]
+       
+        if(b=="a"||b=="e"||b=="i"||b=="o"||b=="u"){
+
+             str+=b+' '
+             
+             vowel++
+             
+    }
+    else{
+        str1+=b+' '
+        consonants++
+        
+    }
+}
+console.log(str+"are the vowels in "+a+" and the count of number of vowels are " +vowel)
+
+console.log(str1+'are the consonants in '+a+ "and the count of number of consonants are "+consonants)
+
+}
+vowels()
+
+// output:-
+
+// i a i a u a are the vowels in i am shivakumar and the count of number of vowels are 6
+// m   s h v k m r are the consonants in i am shivakumarand the count of number of consonants are 9
+
