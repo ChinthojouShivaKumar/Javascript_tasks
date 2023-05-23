@@ -81,7 +81,19 @@ function string(a){
 }
 string(42)
 
-7. // finding true or false taking an argment as string
+7. // either one condtion true print value true
+
+function checkBool(a,b) {
+    if(a+b==10 || a==10|| b==10){
+        console.log("true")
+    }
+    else{
+        console.log("false")
+    }
+}   
+checkBool(15)
+
+8. // finding true or false taking an argment as string
 
 function strNames(a,b) {
     
