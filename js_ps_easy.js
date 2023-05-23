@@ -250,3 +250,66 @@ vowels()
 // i a i a u a are the vowels in i am shivakumar and the count of number of vowels are 6
 // m   s h v k m r are the consonants in i am shivakumarand the count of number of consonants are 9
 
+console.log("Welcome to Programiz!");
+
+
+var letter = "abcdefghtijklmnopqrstuvwxyz"
+
+var str = ''
+
+
+for(let i=0;i<letter.length;i++){
+    b = letter[i]
+    b=b.toUpperCase()
+    str+=b+i+' '
+    
+    
+}
+console.log(str)
+
+// Welcome to Programiz!
+// A0 B1 C2 D3 E4 F5 G6 H7 T8 I9 J10 K11 L12 M13 N14 O15 P16 Q17 R18 S19 T20 U21 V22 W23 X24 Y25 Z26 
+
+console.log("Welcome to Programiz!");
+
+var a = [5,5,5,5,5,5,5,5,5,5]
+
+function phoneNum(a){
+    
+    var b = '('+a[0]+a[1]+a[2]+')'
+    var c = ' '+a[3]+a[4]+a[5]
+    var d = '-'+a[6]+a[7]+a[8]+a[9]
+    
+    console.log(b+c+d)
+    
+}
+phoneNum(a)
+
+// Welcome to Programiz!
+// (555) 555-5555
+
+function ascendingOrder(ar1){
+   let ab =  ar1.sort()
+   return ab
+}
+
+let h = ascendingOrder(['a','ccc','bb','dddd'])
+console.log(h);
+
+//output
+
+//'a','bb'.'ccc','dddd'
+
+
+function secondLargestNum(arr){
+    let sLN = arr.sort()
+    return sLN
+}
+
+let j = secondLargestNum([10,40,30,20,50])
+let j1 = j.slice(3,4)
+console.log(j1)
+
+//output
+
+//40
