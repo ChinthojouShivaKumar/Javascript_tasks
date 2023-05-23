@@ -329,3 +329,14 @@ vowels()
 
 // i a i a u a are the vowels in i am shivakumar and the count of number of vowels are 6
 // m   s h v k m r are the consonants in i am shivakumarand the count of number of consonants are 9
+
+32. //string reverse using while
+
+let a = '123'
+let b = a.length
+let c =''
+while(b>0){
+    b--
+    c+=a[b]
+}
+alert(c)
