@@ -109,6 +109,14 @@ function strNames(a,b) {
 }
 strNames("shiva","kumar")
 
+// 9. arrow function returns greeting
+let shiva = () => {
+    return "greeting"
+}
+alert(shiva())
+
+// output:- greeting
+
 10. //phone number format
 console.log("Welcome to Programiz!");
 
@@ -143,6 +151,22 @@ console.log(h);
 
 //'a','bb'.'ccc','dddd'
 
+//12. printing largest value
+
+let a = [[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]
+let arr = []
+for(let i=0; i<a.length;i++){
+let b = a[i]
+
+let c = Math.max(...b)
+arr.push(c)
+}
+console.log(arr)
+
+//output
+//[7,90,2]
+
+
 13 // finding second largest number
 
 function secondLargestNum(arr){
@@ -157,6 +181,40 @@ console.log(j1)
 //output
 
 //40
+
+//14 remove dupvalues
+
+
+let array = [1,0,1,0]
+
+let array1 = ['the', 'big', 'cat']
+
+
+let a = array.filter(function(item, index){
+    return array.indexOf(item)===index
+})
+
+let b = array1.filter(function(item, index){
+    return array1.indexOf(item)===index
+})
+
+
+alert(a)
+
+alert(b)
+
+
+// 15. printing a unique value
+function uniqueValue(arr){
+    for(let i=0;i<arr.length;i++){
+        if(arr.lastIndexOf(arr[i])==arr.indexOf(arr[i]))
+        alert(arr[i])
+    }
+}
+
+let a = uniqueValue([2,2,2,3,4,4,4])
+
+//ouput: 3
 
 17 // finding vowels and their count
 function vowels(){
@@ -210,6 +268,22 @@ for(i=0;i<a.length;i++){
 }
 console.log(str)
 
+// 19. multiple of numbers
+
+var c=prompt("enter a number: ");
+var sum =" ";
+function mul(a){
+    return a*2;
+}
+for(var i=1;i<=c;i++){
+    sum += mul(i)+" ";
+}
+console.log(sum);
+
+/* ouput:
+
+2, 4, 6, 8, 10*/
+
 20 //checking Datatype with input and using function with argument
 var a = 100;
 var b = "shiva"
@@ -240,6 +314,28 @@ var y = n*(n-1)*(n-2)*(n-3)*(n-4)
 
 console.log(y)
 
+//23 array sort with loops
+
+let a = [2,3,1,5,4]
+
+for(let i=0;i<a.length-1;i++){
+    for(let j =i+1;j<=a.length;j++){
+        // const b = a[i]
+        if(a[i]>a[j]){
+            var temp = a[i]
+            a[i] = a[j]
+            a[j] = temp
+        }
+    }
+     
+}
+console.log(a)
+
+//output
+
+//[1,2,3,4,5]
+
+
 24. // pattern of a number
 
 
@@ -266,6 +362,28 @@ var result = num**pow
 
 console.log(result)
 
+//26 checking prime number
+function checkPrime(prime){
+    let isPrime = true;
+    
+    for(let i=2; i<prime; i++){
+        if(prime%i==0){
+            isPrime =false;
+            break
+        }
+    }
+    if(isPrime){
+    alert(prime+"is prime")
+    }
+    else{
+    alert(prime+"is not a prime")
+}
+}
+let a = checkPrime(6)
+
+
+//output: 6 is not a prime
+
 28 //AtoZ count
 
 console.log("Welcome to Programiz!");
@@ -287,6 +405,18 @@ console.log(str)
 
 // Welcome to Programiz!
 // A0 B1 C2 D3 E4 F5 G6 H7 T8 I9 J10 K11 L12 M13 N14 O15 P16 Q17 R18 S19 T20 U21 V22 W23 X24 Y25 Z26 
+
+//29 finding a missing number
+
+function missingNum(arr,b){
+    for(let i=1;i<arr;i++){
+        if(!(b.includes(i))){
+            alert(i)
+        }
+    }
+}
+
+let missNum = missingNum(5,[5,1,3,4])
 
 30 //consonants and vowles count in given string
 
@@ -330,6 +460,20 @@ vowels()
 // i a i a u a are the vowels in i am shivakumar and the count of number of vowels are 6
 // m   s h v k m r are the consonants in i am shivakumarand the count of number of consonants are 9
 
+// 31. adding specific index in array
+
+
+let a = [1,2,3,4,5,7,8,9,10]
+
+let b = a.splice(5,0,6)
+
+let c = a.join().split()
+
+console.log(c)
+
+//[ '1,2,3,4,5,6,7,8,9,10' ]
+
+
 32. //string reverse using while
 
 let a = '123'
@@ -340,3 +484,26 @@ while(b>0){
     c+=a[b]
 }
 alert(c)
+
+
+//33. occurance of number
+
+
+var c = prompt('enter input')
+
+var a = [1,6,3,1,5,9,7,2,1,9,3,7,8,9,10]
+
+let count = 0
+
+for(let i=0; i<a.length;i++){
+     const b = a[i]
+     if(b==c){
+         count++
+     }
+    
+}
+alert("the occurance is"+count)
+
+
+//output:
+//7 occurnace is 2
